@@ -1,12 +1,12 @@
 from django.contrib import admin
-from AppCoder.models import cursos, entregables, estudiantes, profesores
+from .models import *
 
 # Register your models here.
 
-admin.site.registrer(cursos)
+admin.site.register(cursos)
 
-admin.site.registrer(entregables)
+admin.site.register(entregables)
 
-admin.site.registrer(estudiantes)
+admin.site.register(estudiantes)
 
-admin.site.registrer(profesores)
+admin.site.register(profesores)

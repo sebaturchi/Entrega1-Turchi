@@ -1,14 +1,14 @@
 from django.urls import path
-from AppCoder import views
-from AppCoder.views import inicio, cursos, profesores, estudiantes, entregables
+from .views import *
 
 
 
 urlpatterns = [
     
-    path('', views.inicio),
-    path('cursos', views.cursos, name='Cursos'),
-    path('profesores', views.profesores),
-    path('estudiantes', views.estudiantes),
-    path('entregables', views.entregables),
+    path('', inicio, name = 'inicio'),
+    path('cursos/', cursos, name='cursos'),
+    path('profesores/', profesores, name = 'profesores'),
+    path('estudiantes/', estudiantes, name = 'estudiantes'),
+    path('entregables/', entregables, name = 'entregables'),
+    path('anadir_profesor/', anadir_profesor, name="anadir_profesor"),
 ]

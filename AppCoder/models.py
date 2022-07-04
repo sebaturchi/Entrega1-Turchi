@@ -14,8 +14,8 @@ class estudiantes(models.Model):
 class profesores(models.Model):
     nombre = models.CharField(max_length=30)
     apellido = models.CharField(max_length=30)
-    email = models.EmailField()
     profesion = models.CharField(max_length=30)
+    salario = models.IntegerField()
     
 class entregables(models.Model):
     nombre = models.CharField(max_length=30)

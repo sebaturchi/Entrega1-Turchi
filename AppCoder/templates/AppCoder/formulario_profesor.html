@@ -1,0 +1,31 @@
+{% extends 'AppCoder/base.html' %}
+{% load static %}
+
+
+
+
+<!-- {% block tituloPagina %}
+
+    <h2> Anadir Profesor - App Coder </h2>
+
+    {% if formulario_profesor.errors %}
+
+    <p style="color:red;"> Datos mal ingresados</p>
+
+    {% endif %}
+
+{% endblock %} -->
+
+{% block contenidoPagina %}
+    Anadi al profesor:
+        <form action="" method="POST">
+            {% csrf_token %}
+
+    <!-- <p>Curso: <input type="text" name="nombre" id="" maxlength="30"> </p>
+    <p>Comision: <input type="number" name="comision" id="" min="0"> </p> -->
+
+            {{ form.as_p }}
+
+            <input type="submit", value="Anadir">
+        </form>
+{% endblock %}
