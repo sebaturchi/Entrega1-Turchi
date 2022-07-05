@@ -14,8 +14,16 @@ Profesores - App Coder
                 <ul class="list-group">
                     {% for profesor in profesores %}
                         <li class="list-group-item d-flex justify-content-between align-items-start">
-                            {{profesor.nombre}}{{profesor.apellido}}{{profesor.profesion}}{{profesor.salario}}
-                            <span class="badge bg-success rounded-pill">{{curso.comision}}</span>
+                            {{profesor.nombre}}
+                            {{profesor.apellido}},
+                            {{profesor.profesion}}
+                            
+                            <title>
+                            Salario:
+                            </title>
+                            
+                            <span class="badge bg-success rounded-pill">{{profesor.salario}}</span>
+                            <!-- <span class="badge bg-success rounded-pill">{{curso.comision}}</span> -->
                         </li>
                     {% endfor %}
                 </ul>
